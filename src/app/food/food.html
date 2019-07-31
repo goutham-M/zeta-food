@@ -1,0 +1,49 @@
+<div ng-controller="FoodController as fc">
+        <header>
+                <section layout="row" flex="100" layout-sm="column">
+                    <md-button flex="100" class=" best-btn md-raised md-primary">
+                            <i class="mdi mdi-keyboard-backspace" style="color: #FDFEFE;
+                            position: absolute;
+                            left: 44px; font-size: 36px;" ng-click="fc.nav()"></i>
+                        Best Food App</md-button>
+            </section>
+            </header>
+    <md-content flex layout="column" layout-align="start center">
+    <img width="600" flex="50" ng-src="{{fc.food.image}}" class="md-card-image" alt="Washed Out">
+    <div style="width: 400px;">
+        <div style="float: left;
+        position: relative;
+        left: -99px;">
+                <h4>{{::fc.food.name}}</h4>
+        </div>
+        <div style="float: right;
+        position: relative;
+        right: -109px;">
+                <md-button  class="blue-color">
+                   <span><i class="mdi mdi-minus" style="color: #FDFEFE;" ng-click="fc.decreaseOrder()"></i></span>
+                        <span style="color: #FDFEFE;">{{fc.od}}</span>
+                        <span><i class="mdi mdi-plus" style="color: #FDFEFE;" ng-click="fc.increaseOrder()"></i></span>
+                      </md-button>
+        </div>
+        
+        
+    </div>
+    <div style="margin-left: -200px;
+    float: left;
+    width: 400px;;
+    top: -23px;"><h4>Amount : {{::fc.food.price}} Rupees</h4></div>
+    <md-divider></md-divider>
+    <div style="width: 400px;">
+        <div style="float: left;
+        margin-left: -100px;">Category: {{::fc.food.category}}</div>
+        <div style="float: right;
+        margin-right: -101px;"><i class="mdi mdi-star-outline" style="color: #ffd700"></i> {{::fc.food.rating}} Rating, ({{::fc.food.reviews}} Reviews)</div>
+    </div>
+    <div style="width: 586px;"  >
+        <h4>Details</h4>
+        <p>
+                {{::fc.food.details}}
+        </p>
+    </div>
+</md-content>
+</div>

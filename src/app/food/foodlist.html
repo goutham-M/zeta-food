@@ -1,0 +1,40 @@
+<div ng-controller="FoodListController as fc">
+        <header>
+                <section layout="row" flex="100" layout-sm="column">
+                    <md-button flex="100" class=" best-btn md-raised md-primary">Best Food App</md-button>
+            </section>
+            </header>
+    <div>
+        <md-content>
+            <section>
+                <h1>FAVOURITES</h1>
+                <p>Enjoy what you have been ordering!</p>
+                <i class="mdi mdi-cart mdi-36px" style="position: absolute;
+                top: 20px;
+                right: 25px;" ng-click="fc.nav()">{{fv.noOfOrder}}</i>
+                <div layout="row">
+                    <div ng-repeat="fv in fc.foodList.recipes | filter: {isFavourite: true}">
+                            <md-card style="width: 300px" ng-click="setSelectedFood(fv)">
+                                    <img ng-src="{{fv.image}}" class="md-card-image" alt="Washed Out">
+                                    
+                                    <md-card-content>
+                                            <h5>{{::fv.name}}</h5>
+                                            <div>{{::fv.price}}</div>
+                                            
+                                            
+                                    </md-card-content>
+                                    <md-card-actions layout="row" layout-align="end center">
+                                            <md-button>REORDER</md-button>
+                                          </md-card-actions>
+                                          
+                                          
+                                    </md-card>
+                                    
+                    </div>
+                </div>
+            </section>
+
+        </md-content>
+    </div>
+   
+</div>

@@ -1,0 +1,12 @@
+.best-btn {
+  padding: 24px;
+  margin: 0; }
+
+.md-button {
+  background: #0CB863 !important; }
+
+md-card {
+  min-width: 200px; }
+
+div[layout="row"] {
+  overflow: auto; }

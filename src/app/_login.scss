@@ -1,0 +1,2078 @@
+.newlogin {
+    .clearfix {
+        clear: both;
+        font-size: 0;
+        height: 0;
+    }
+    
+    .down_arrow {
+        background: url(../assets/down-arrow.png) no-repeat left top;
+        position: fixed;
+        left: 3%;
+        bottom: 5%;
+        width: 57px;
+        height: 57px;
+        z-index: 1000;
+        cursor: pointer;
+        animation: bounceScroll 1.5s infinite;
+        -webkit-animation: bounceScroll 1.5s infinite;
+        -moz-animation: bounceScroll 1.5s infinite;
+    }
+    
+    .first_page_container {
+        margin: 0 auto;
+        padding: 79px 0 0;
+    }
+    
+    .navigation_icon {
+        display: none;
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            background: url(../assets/navigation-icon.png) no-repeat left top;
+            float: right;
+            width: 19px;
+            height: 19px;
+            display: block;
+            margin: 25px 16px 0 0;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            background: url(../assets/navigation-icon.png) no-repeat left top;
+            float: right;
+            width: 19px;
+            height: 19px;
+            display: block;
+            margin: 25px 16px 0 0;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            background: url(../assets/navigation-icon.png) no-repeat left top;
+            float: right;
+            width: 19px;
+            height: 19px;
+            display: block;
+            margin: 25px 16px 0 0;
+            cursor: pointer;
+        }
+    }
+    
+    nav {
+        width: 100%;
+        font-weight: 300;
+        font-style: normal;
+        position: fixed;
+        background: rgba(255,255,255,.95);
+        z-index: 10;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.50);
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.50);
+
+        @media only screen and (max-width: 479px) and (min-width: 320px)
+        {
+            background: rgba(255,255,255,1);
+        }
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            background: rgba(255,255,255,1);
+        }
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .display-block {
+        display: block !important;
+    }
+    
+    .nav_container ul li {
+        text-align: center;
+        float: left;
+        margin: 0 4.78% 0;
+        font-weight: 400;
+        display: inline;
+        display: inline-block;
+        padding: 40px 0 0;
+        height: 35px;
+
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            border-top: 1px solid #f2efef;
+            width: 100%;
+            padding: 2% 0;
+            margin: 0;
+            height: auto;
+        }
+    }
+    
+    .nav_container ul li a {
+        text-decoration: none;
+        color: #666;
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            font-size: 1em;
+            display: block;
+        }
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            font-size: 1em;
+            font-weight: 400;
+            display: block;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            font-size: 1em;
+            font-weight: 400;
+            display: block;
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+        outline: 0;
+    }
+    a:link, a:visited, a:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+    a:link, a:visited, a:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+    
+    .nav_container ul li:hover {
+        border-bottom: 4px solid #734f97;
+        color: #734f97;
+    }
+    
+    .nav_container ul li.active {
+        border-bottom: 4px solid #734f97;
+        color: #734f97;
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            border-bottom: 0;
+        }
+    }
+    .nav_container ul li a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    .logo_container a {
+        display: block;
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            display: block;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            display: block;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            display: block;
+        }
+    }
+
+    a:link, a:visited, a:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+    
+    .logo_container {
+        width: 16.09%;
+        text-align: right;
+        float: left;
+        margin: 13px 0 10px;
+        @media only screen and (max-width: 479px) and (min-width: 320px) {
+            width: 63%;
+        }
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            width: 42%;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            width: 34%;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            width: 26%;
+        }
+    }
+    
+    .nav_container {
+        float: left;
+        width: 60%;
+        @media only screen and (max-width: 479px) and (min-width: 320px) {
+            width: 100%;
+            box-shadow: inset 0 -3px 3px -3px #555;
+            display: none;
+            padding: 0;
+        }
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            width: 100%;
+            box-shadow: inset 0 -3px 3px -3px #555;
+            display: none;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            width: 100%;
+            box-shadow: inset 0 -3px 3px -3px #555;
+            display: none;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            width: 100%;
+            box-shadow: inset 0 -3px 3px -3px #555;
+            display: none;
+            padding: 0;
+        }
+    }
+
+    .nav_container ul {
+        height: 79px;
+        overflow: hidden;
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            height: auto;
+            overflow: visible;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            height: auto;
+            overflow: visible;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            height: auto;
+            overflow: visible;
+        }
+    }
+    
+    .nav_container ul li {
+        text-align: center;
+        float: left;
+        margin: 0 4.78% 0;
+        font-weight: 400;
+        display: inline;
+        display: inline-block;
+        padding: 40px 0 0;
+        height: 35px;
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            border-top: 1px solid #f2efef;
+            width: 100%;
+            padding: 3% 0;
+            margin: 0;
+            height: auto;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            border-top: 1px solid #f2efef;
+            width: 100%;
+            padding: 3% 0;
+            margin: 0;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+    
+    .first_page_bg {
+        position: relative;
+    }
+
+    .first_page_bg img {
+        width: 100%;
+    }
+
+    .block {
+        display: block;
+    }
+    
+    .second_page_container {
+        background: #ebebeb;
+        position: relative;
+        z-index: 3;
+     
+        .second_page_inner {
+            @media only screen and (min-width: 1280px) {
+                width: 1222px;
+            }
+        }
+    
+        .second_page_inner {
+            width: 100%;
+            margin: 0 auto;
+            padding: 9.14% 0 10%;
+        }
+    
+        .heading_wrapper {
+            width: 78%;
+            margin: 0 auto;
+            text-align: center;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 90%;
+                padding: 0 0 4%;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 90%;
+                padding: 0 0 4%;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 90%;
+                padding: 0 0 4%;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 90%;
+                padding: 0 0 4%;
+            }
+        }
+    
+        .page_heading_center {
+            font-size: 2.778em;
+            line-height: 1.2em;
+            text-align: center;
+            padding: 0 1% 1% 1%;
+            font-weight: 300;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 1.029em;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                font-size: 1.750em;
+                font-weight: 300;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                font-size: 1.750em;
+                font-weight: 300;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                font-size: 1.778em;
+                font-weight: 300;
+            }
+        }
+    
+        .purple {
+            color: #734f97;
+        }
+    
+        .personalised_box_container {
+            padding: 4.14% 0 0;
+            display: table;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            margin: 4.14% auto 0;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 90%;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 90%;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 90%;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 90%;
+            }
+        }
+    
+        .personalised_box {
+            width: 26%;
+            display: table-cell;
+            background: #fff;
+            font-weight: 300;
+            padding: 5.20% 2%;
+            text-align: center;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 81.5%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 8.70%;
+                position: relative;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 70%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 6.5%;
+                position: relative;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 60%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 6.5%;
+                position: relative;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 52%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 8.70%;
+                position: relative;
+            }
+        }
+    
+        .assisted_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -71px;
+            width: 72px;
+            height: 74px;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        .box_heading {
+            font-size: 1.667em;
+            padding: 13.63% 0 5.57%;
+            color: #444;
+            font-weight: 300;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 1.214em;
+                padding: 6.63% 0 4.57%;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                padding: 6.63% 0 4.57%;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                padding: 6.63% 0 4.57%;
+            }
+        }
+        .box_content {
+            line-height: 1.5em;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 0.8em;
+            }
+        }
+    
+        .filler_div {
+            width: 5%;
+            display: table-cell;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            display: block;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                display: none;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                display: none;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                display: none;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                display: none;
+            }
+        }
+    
+        .personalised_box_second {
+            width: 26%;
+            display: table-cell;
+            background: #fff;
+            font-weight: 300;
+            padding: 5.20% 2%;
+            text-align: center;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 35%;
+            display: block;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 81.5%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 8.70%;
+                position: relative;
+                left: 0;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 70%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 6.5%;
+                position: relative;
+                left: 0;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 60%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 6.5%;
+                position: relative;
+                left: 0;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 52%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 8.70%;
+                position: relative;
+                left: 0;
+            }
+        }
+    
+        .convenient_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -159px;
+            width: 69px;
+            height: 74px;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        .personalised_box_third {
+            width: 30%;
+            display: table-cell;
+            background: #fff;
+            font-weight: 300;
+            padding: 5.20% 0;
+            text-align: center;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 70%;
+            display: block;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 81.5%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 8.70%;
+                position: relative;
+                left: 0;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 70%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 6.5%;
+                position: relative;
+                left: 0;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 60%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 6.5%;
+                position: relative;
+                left: 0;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 52%;
+                margin: 0 auto 8%;
+                display: block;
+                padding: 8.70%;
+                position: relative;
+                left: 0;
+            }
+        }
+    
+        .personalised_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -247px;
+            width: 105px;
+            height: 68px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    .third_page_container {
+        background: #563c70 url(../assets/third-page-bg.png) repeat-y center top;
+        position: relative;
+        z-index: 4;
+
+        @media only screen and (max-width: 479px) and (min-width: 320px)
+        {
+            background: #563c70;
+        }
+
+        @media only screen and (max-width: 599px) and (min-width: 320px)
+        {
+            background: #563c70;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 600px)
+        {
+            background: #563c70;
+        }
+
+        @media only screen and (max-width: 1023px) and (min-width: 768px)
+        {
+            background: #563c70;
+        }
+    
+        .third_page_inner {
+            width: 80.70%;
+            margin: 0 auto;
+            padding: 0 0 7.03%;
+
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 92%;
+                padding: 0;
+            }
+    
+            @media only screen and (min-width: 1280px) {
+                width: 1033px;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 92%;
+                padding: 0;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 92%;
+                padding: 0;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 90%;
+                padding: 0;
+            }
+    
+            .howitwork_heading {
+                color: #fff;
+                font-size: 1.833em;
+                text-align: center;
+                padding: 12% 11% 0;
+                font-weight: 300;
+                background: #563c70;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    font-size: 1.029em;
+                    border-left: 2px solid #fff;
+                    margin: 0 0 0 2%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px)
+                {
+                    font-size: 1.750em;
+                    border-left: 2px solid #fff;
+                    margin: 0 0 0 2%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    font-size: 1.750em;
+                    border-left: 2px solid #fff;
+                    margin: 0 0 0 2%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    font-size: 1.750em;
+                    border-left: 2px solid #fff;
+                    margin: 0 0 0 2%;
+                }
+    
+                .red {
+                    color: #fb4b42;
+                }
+            }
+    
+            .white_bdr {
+                position: relative;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    border-left: 2px solid #fff;
+                    margin: -1.4% 0 0 2%;
+                    padding: 0 0 4%;
+                    height: 100% !important;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px)
+                {
+                    border-left: 2px solid #fff;
+                    margin: -1.4% 0 0 2%;
+                    padding: 0 0 4%;
+                    height: 100% !important;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    border-left: 2px solid #fff;
+                    margin: -1.4% 0 0 2%;
+                    padding: 0 0 4%;
+                    height: 100% !important;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    border-left: 2px solid #fff;
+                    margin: -1.4% 0 0 2%;
+                    padding: 0 0 4%;
+                    height: 100% !important;
+                }
+            }
+    
+            .tooltip_container_first {
+                background: url(../assets/tooltip-icon.png) no-repeat right 36%;
+                width: 50.53%;
+                position: absolute;
+                top: 3%;
+                left: 0;
+                display: block;
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    padding: 12.3% 0 0;
+                    margin: 0 0 0 -2.5%;
+                    left: 0;
+                    position: relative;
+                    float: none;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    margin: 0 0 0 -1.8%;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    left: 0 !important;
+                    top: 2%;
+                    display: block;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat .6% 50%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                    top: 2%;
+                }  
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat 1% 53%;
+                    width: 90%;
+                    left: 0;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                }
+                
+            }
+    
+            .left_tooltip {
+                border: 1px solid #9e82ba;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                width: 89.48%;
+                float: left;
+                background: #563c70;
+                margin: 0 0 0 2.49%;
+                position: relative;
+                line-height: 1.1em;
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    width: 100% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    width: 79.48% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    width: 79.48% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    width: 79.48% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+            }
+
+            .tooltip_right_arrow_red {
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.9%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.1%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -3.2%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -2.6%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+            }
+
+    
+            .tooltip_right_arrow {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -416px;
+                float: left;
+                width: 14px;
+                height: 19px;
+                position: absolute;
+                right: -2.9%;
+                top: 30%;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.9%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.1%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -3.2%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -2.6%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+            }
+    
+            .tooltip_left {
+                float: left;
+                width: 22.35%;
+                text-align: center;
+                padding: 8% 0 0;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    float: none;
+                    padding: 5.4% 0 3% 5%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    float: none;
+                    padding: 5.4% 0 3% 5%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    float: none;
+                    padding: 5.4% 0 3% 5%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    float: none;
+                    padding: 5.4% 0 3% 5%;
+                }
+            }
+
+            .understanding_requirements_icon, .understanding_requirements_icon_hover {
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -498px;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -498px;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -498px;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -498px;
+                }
+            }
+            
+    
+            .understanding_requirements_icon {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -498px;
+                width: 43px;
+                height: 43px;
+                display: inline-block;
+            }
+
+            .tooltip_right_hover {
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    float: none;
+                    padding: 0 0 4.52% 5%;
+                    width: 90%;
+                    background: 0;
+                    color: #fff;
+                    font-weight: 300;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    float: none;
+                    padding: 0 0 4.52% 5%;
+                    width: 89.48%;
+                    background: 0;
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+            
+    
+            .tooltip_right {
+                float: left;
+                color: #fff;
+                width: 73.96%;
+                padding: 4.52% 0 4.52%;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    float: none;
+                    padding: 0 0 4.52% 5%;
+                    width: 90%;
+                    background: 0;
+                    color: #fff;
+                    font-weight: 300;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    float: none;
+                    padding: 0 0 4.52% 5%;
+                    width: 89.48%;
+                    background: 0;
+                    color: #fff;
+                    font-weight: 300;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    float: none;
+                    padding: 0 0 4.52% 5%;
+                    width: 89.48%;
+                    background: 0;
+                    color: #fff;
+                    font-weight: 300;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    float: none;
+                    padding: 0 0 4.52% 5%;
+                    width: 89.48%;
+                    background: 0;
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+    
+            .tooltip_heading {
+                padding: 0 0 2.05%;
+                font-size: 1.111em;
+                font-weight: 400;
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    font-size: 0.986em;
+                    padding: 0 0 3.05%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    font-size: 1.125em;
+                    padding: 0 0 3.05%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    font-size: 1.125em;
+                    padding: 0 0 3.05%;
+                }
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    font-size: 1em;
+                    padding: 0 0 3.05%;
+                }
+            }
+    
+            .tooltip_container_red_first {
+                background: url(../assets/tooltip-icon.png) no-repeat left 36%;
+                width: 50.53%;
+                float: right;
+                position: absolute;
+                top: 20%;
+                left: 49.47%;
+                display: block;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    padding: 12.3% 0 0;
+                    margin: 0 0 0 -2.5%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    margin: 0 0 0 -1.8%;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    left: 0 !important;
+                    top: 2%;
+                    display: block;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat .6% 50%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat 1% 53%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                }
+
+                
+            }
+    
+            .right_tooltip {
+                border: 1px solid #9e82ba;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                width: 89.48%;
+                float: right;
+                margin: 0 2.49% 0 0;
+                position: relative;
+                background: #563c70;
+                line-height: 1.1em;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    width: 100% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    width: 79.48% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    width: 79.48% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    width: 79.48% !important;
+                    float: left !important;
+                    background: #563c70 !important;
+                    margin: 0 0 0 11% !important;
+                    border: 1px solid #9e82ba;
+                }
+            }
+
+            .tooltip_left_arrow_red {
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.9%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.1%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -3.2%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -2.6%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+            }
+            
+    
+            .tooltip_left_arrow {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                float: left;
+                width: 13px;
+                height: 17px;
+                position: absolute;
+                left: -2.7%;
+                top: 33%;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.9%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -4.1%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -3.2%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -352px;
+                    float: none;
+                    left: -2.6%;
+                    width: 14px;
+                    height: 19px;
+                    top: 30%;
+                }
+            }
+
+            .profile_creation_icon_hover {
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -641px;
+                }
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -641px;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -641px;
+                }
+            }
+    
+            .profile_creation_icon {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -641px;
+                width: 46px;
+                height: 42px;
+                display: inline-block;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px)
+                {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -641px;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -641px;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -641px;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -641px;
+                }
+            }
+    
+            .animation {
+                background: transparent url(../assets/tooltip-bg.png) no-repeat center center;
+                animation: howitworks 11s infinite;
+                animation-timing-function: linear;
+                -webkit-animation: howitworks 11s infinite;
+                -webkit-animation-timing-function: linear;
+                position: absolute;
+                width: 360px;
+                height: 360px;
+                top: 40%;
+                left: 32.5%;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px) {
+                    display: none;
+                }
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    display: none;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px)
+                {
+                    display: none;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px)
+                {
+                    display: none;
+                }
+            }
+    
+            @keyframes howitworks {
+                0% {
+                    transform-origin: 50% 50%;
+                    transform: rotate(-360deg);
+                    animation-timing-function: linear
+                }
+            }
+            
+            @-webkit-keyframes howitworks {
+                0% {
+                    -webkit-transform-origin: 50% 50%;
+                    -webkit-transform: rotate(-360deg);
+                    animation-timing-function: linear
+                }
+            }
+    
+            .tooltip_container_second {
+                background: url(../assets/tooltip-icon.png) no-repeat right 36%;
+                width: 50.53%;
+                position: absolute;
+                top: 36%;
+                left: 0;
+                display: block;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    padding: 12.3% 0 0;
+                    margin: 0 0 0 -2.5%;
+                    left: 0;
+                    position: relative;
+                    float: none;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    margin: 0 0 0 -1.8%;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    left: 0 !important;
+                    top: 2%;
+                    display: block;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat .6% 50%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat 1% 53%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                }
+            }
+    
+            .finding_matches_icon {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -567px;
+                width: 43px;
+                height: 43px;
+                display: inline-block;
+            }
+    
+            .tooltip_container_red_second {
+                background: url(../assets/tooltip-icon.png) no-repeat left 36%;
+                width: 50.53%;
+                float: right;
+                position: absolute;
+                top: 56%;
+                left: 49.47%;
+                display: block;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    padding: 12.3% 0 0;
+                    margin: 0 0 0 -2.5%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    margin: 0 0 0 -1.8%;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    left: 0 !important;
+                    top: 2%;
+                    display: block;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat .6% 50%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat 1% 53%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                }
+            }
+    
+            .connecting_prospects_icon {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -711px;
+                width: 45px;
+                height: 43px;
+                display: inline-block;
+            }
+    
+            .tooltip_container_third {
+                background: url(../assets/tooltip-icon.png) no-repeat right 36%;
+                width: 50.53%;
+                position: absolute;
+                top: 77%;
+                left: 0;
+                display: block;
+
+                @media only screen and (max-width: 479px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    padding: 12.3% 0 0;
+                    margin: 0 0 0 -2.5%;
+                    left: 0;
+                    position: relative;
+                    float: none;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 599px) and (min-width: 320px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat left 48%;
+                    width: 90%;
+                    margin: 0 0 0 -1.8%;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    left: 0 !important;
+                    top: 2%;
+                    display: block;
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 600px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat .6% 50%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                    top: 2%;
+                }
+
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    background: url(../assets/tooltip-icon.png) no-repeat 1% 53%;
+                    width: 90%;
+                    left: 0 !important;
+                    position: relative;
+                    float: none;
+                    padding: 10% 0 0;
+                    margin: 0 0 0 -2%;
+                    display: block;
+                }
+            }
+    
+            .arranging_meetings_icon {
+                background: url(../assets/select-shaadi-sprite-v4.png) no-repeat left -780px;
+                width: 42px;
+                height: 43px;
+                display: inline-block;
+            }
+    
+            
+            
+        }
+    }
+
+    .fourth_page_container {
+        background: #ebebeb;
+        position: relative;
+        z-index: 3;
+
+        .fourth_page_inner {
+            @media only screen and (min-width: 1280px) {
+                width: 1222px;
+            }
+        }
+    
+        .fourth_page_inner {
+            width: 100%;
+            margin: 0 auto;
+            padding: 9.14% 0 10%;
+        }
+    }
+    
+    .fifth_page_container {
+        background: #563c70;
+    
+        .fifth_page_inner {
+            width: 100%;
+            margin: 0 auto;
+            padding: 9.14% 0 7.03%;
+    
+            @media only screen and (min-width: 1280px) {
+                width: 1002px;
+            }
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                padding: 9.14% 0 10%;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                padding: 9.14% 0 8.03%;
+            }
+        }
+    
+        .membership_heading {
+            font-size: 2.778em;
+            color: #fff;
+            text-align: center;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 1.429em;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px) {
+                font-size: 1.750em;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                font-size: 1.75em;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                font-size: 1.778em;
+            }
+        }
+    
+        .membership_plan_bg {
+            background: url(../assets/or.png) no-repeat center center;
+            width: 60%;
+            margin: 4.14% auto 5.14% auto;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                background-size: 8%;
+                width: 92%;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                background-size: 6%;
+                width: 92%;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                background-size: 7%;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                background-size: 4%;
+            }
+        }
+    
+        .membership_container {
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+    
+        .membership_orange {
+            color: #f9991d;
+            font-size: 1.556em;
+            font-weight: 300;
+            padding: 0 0 4.79%;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 1.286em;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                font-size: 1.500em;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                font-size: 1.500em;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                font-size: 1.444em;
+            }
+        }
+    
+        .rupees_icon_wrapper {
+            width: 17%;
+        }
+    
+        .rupees_icon_white {
+            background: url(../assets/rupees-icon-white.png) no-repeat left top;
+            width: 17px;
+            height: 29px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 3% 2% 0 0;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                background-size: 60%;
+                vertical-align: top;
+                margin: 2% 0 0;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px) {
+                background-size: 60%;
+                vertical-align: top;
+                margin: 2% 0 0;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                background-size: 66% auto;
+                margin: 4% 0 0;
+                vertical-align: top;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                background-size: 60%;
+                vertical-align: top;
+                margin: 2% 0 0;
+            }
+        }
+    
+        .membership_price {
+            font-size: 2.222em;
+            color: #fff;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 1.6em;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px) {
+                font-size: 1.6em;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                font-size: 1.750em;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                font-size: 1.556em;
+            }
+        }
+    
+        .benefit_container {
+            background: url(../assets/benefit-border.png) repeat-x left center;
+            text-align: center;
+        }
+    
+        .benefit_text {
+            font-size: 1.667em;
+            font-weight: 300;
+            color: #f9991d;
+            padding: 0 2%;
+            background: #563c70;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 1em;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                font-size: 1.5em;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                font-size: 1.500em;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                font-size: 1.444em;
+            }
+        }
+    
+        .feature_pad {
+            padding: 0 0 2.5%;
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                padding: 2px 0 2.5%;
+            }
+        }
+    
+        .feature_container {
+            width: 31%;
+            float: left;
+            padding: 2.5% 2% 0 0;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                width: 86.25%;
+                float: none;
+                margin: 5% 0 0 6%;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                width: 86.25%;
+                float: none;
+                margin: 5% 0 0 6%;
+                padding: 1% 2% 0 0;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 73%;
+                float: none;
+                margin: 4% 0 0 14%;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 70%;
+                float: none;
+                margin: 1.5% 0 0 17%;
+            }
+            
+        }
+    
+        .feature_left {
+            float: left;
+            text-align: center;
+            padding: 3% 0 0;
+            width: 23%;
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                padding: 0;
+            }
+
+            @media only screen and (max-width: 767px) and (min-width: 600px)
+            {
+                width: 17%;
+                padding: 0;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                width: 17%;
+                padding: 0;
+            }
+        }
+    
+        .feature_right {
+            float: left;
+            width: 77%;
+            font-size: .889em;
+            font-weight: 300;
+            color: #fff;
+            @media only screen and (max-width: 479px) and (min-width: 320px)
+            {
+                font-size: 0.8em;
+            }
+
+            @media only screen and (max-width: 599px) and (min-width: 320px)
+            {
+                font-size: .938em;
+                width: 68%;
+                line-height: 1.2em;
+            }
+
+            @media only screen and (max-width: 1023px) and (min-width: 768px)
+            {
+                font-size: .944em;
+                line-height: 1.3em;
+            }
+        }
+    
+        .personalised_attention {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -453px;
+            width: 37px;
+            height: 35px;
+            display: inline-block;
+        }
+    
+        .profile_enhancement_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -1067px;
+            width: 39px;
+            height: 35px;
+            display: inline-block;
+        }
+    
+        .partner_search_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -973px;
+            width: 40px;
+            height: 29px;
+            display: inline-block;
+        }
+    
+        .handpick_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -910px;
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+        }
+    
+        .telephone_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -1018px;
+            width: 28px;
+            height: 36px;
+            display: inline-block;
+        }
+    
+        .meeting_icon {
+            background: url(../assets/select-shaadi-sprite-v4.png) no-repeat 0 -1121px;
+            width: 42px;
+            height: 35px;
+            display: inline-block;
+        }
+    
+        .get_started_container {
+            text-align: center;
+            border-top: 1px solid #89779b;
+            padding: 5.70% 0 1.79%;
+            margin: 2.5% 0 0;
+        }
+    }
+    
+}
+
+.footer_bg {
+    background: #ebebeb;
+}
+@media only screen and (min-width: 1280px) {
+    .footer_inner {
+        width: 1222px;
+    }
+}
+
+.footer_inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 0;
+    font-size: .750em;
+    font-weight: 400;
+}
+
+.footer_right {
+    float: right;
+    text-align: right;
+    width: 50.63%;
+}
+
+
+.need_help {
+    font-weight: 300;
+    background: #bbb;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    width: 80%;
+    cursor: pointer;
+}
+
+.need_help {
+    width: 114px
+}
+  
+  .need_help_container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    right: 20px;
+    top: 80px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    min-height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .need_help_container:hover .dropdown-content {display: block;}
+  
+  .need_help_container:hover .need_help {background-color: #3e8e41;}
+
+  @media only screen and (min-width: 1280px) {
+    .need_help_container {
+        width: 142px;
+    }
+}
+
+.need_help_container {
+    width: 11.24%;
+    float: right;
+    padding: 20px 0 0;
+    position: relative;
+}
+
+.layer_needhelp {
+    background: #fff;
+    padding: 8%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(100,100,100,0.9);
+    -moz-box-shadow: 0 5px 5px 0 rgba(100,100,100,0.9);
+    box-shadow: 0 5px 5px 0 rgba(100,100,100,0.9);
+}
+
+.need_help_container:hover .layer_needhelp {display: block;}
