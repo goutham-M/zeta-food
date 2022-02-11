@@ -42,7 +42,7 @@
     "gulp-war": "^0.1.4",
     "gulp-zip": "^3.2.0",
     "http-proxy-middleware": "~0.9.0",
-    "karma": "~0.13.10",
+    "karma": "~6.3.14",
     "karma-angular-filesort": "~1.0.0",
     "karma-coverage": "~0.5.2",
     "karma-jasmine": "~0.3.6",
